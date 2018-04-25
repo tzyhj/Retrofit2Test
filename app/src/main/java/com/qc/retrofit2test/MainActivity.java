@@ -29,13 +29,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button btn_test1 = findViewById(R.id.btn_test1);
-        btn_test1.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"123",Toast.LENGTH_LONG).show();
-            }
-        });
     }
 
     private void test() {
