@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -25,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 test();
+            }
+        });
+        Button btn_test1 = findViewById(R.id.btn_test1);
+        btn_test1.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"123",Toast.LENGTH_LONG).show();
             }
         });
     }
